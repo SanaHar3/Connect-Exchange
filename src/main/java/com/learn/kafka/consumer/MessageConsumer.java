@@ -11,7 +11,7 @@ import static org.apache.kafka.common.requests.DeleteAclsResponse.log;
 @Slf4j
 public class MessageConsumer {
 
-    @KafkaListener(topics = "mon-tunnel-topic", groupId = "message-group-1")
+    @KafkaListener(topics = "mon-tunnel-topic", groupId = "${spring.kafka.consumer.group-id}")
     public void listen(String message) {
         log.info("Message receive : {}", message);
     }
