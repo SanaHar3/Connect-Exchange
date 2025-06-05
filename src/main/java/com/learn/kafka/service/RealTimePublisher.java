@@ -19,7 +19,7 @@ public class RealTimePublisher {
     @Autowired
     private ObjectMapper objectMapper;
 
-    // Publie les taux toutes les 5 minutes (300000 ms). Change la devise si tu veux.
+    // Publie les taux toutes les 5 minutes. USD base pour exemple
     @Scheduled(fixedRate = 300000)
     public void fetchAndPublish() {
         try {
