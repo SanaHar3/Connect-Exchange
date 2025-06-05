@@ -18,7 +18,7 @@ public class ExchangeModel {
     private String date;
     private Map<String, Double> rates;
 
-    private Date timestamp;
+    private String timestamp;
 
     public String getId() {
         return id;
@@ -52,11 +52,10 @@ public class ExchangeModel {
         this.rates = rates;
     }
 
-    public Date getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
-
-    public void setTimestamp(Date timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 }
